@@ -1,3 +1,6 @@
+import 'package:drugstore/Screens/CategoriesPage.dart';
+import 'package:drugstore/Screens/Doctors_StartingPage.dart';
+import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:drugstore/Screens/SplashScreenPage.dart';
 
 import 'package:flutter/material.dart';
@@ -13,7 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Drugstore',
       debugShowCheckedModeBanner: false,
-      home: SplashScreenPage(),
+      initialRoute: '/splash',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/splash': (context) => SplashScreenPage(),
+        '/categories': (context) => CategoriesPage(),
+        '/docstart': (context) => DoctorsStartingpage(),
+      },
     );
   }
 }

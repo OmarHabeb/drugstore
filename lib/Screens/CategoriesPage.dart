@@ -1,5 +1,4 @@
-import 'dart:ffi';
-
+import 'package:drugstore/Widgets/DrawerWidget.dart';
 import 'package:flutter/material.dart';
 
 class CategoriesPage extends StatefulWidget {
@@ -19,7 +18,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
-        drawer: Drawer(),
+        drawer: CustomDrawer(),
         body: Column(
           children: [
             Expanded(
