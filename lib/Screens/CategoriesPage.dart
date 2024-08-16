@@ -61,7 +61,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                         width: 330,
                         height: 100,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Color(0XFF00B0AF),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black26,
@@ -69,6 +69,9 @@ class _CategoriesPageState extends State<CategoriesPage> {
                               offset: Offset(0, 2),
                             ),
                           ],
+                        ),
+                        child: Center(
+                          child: Text("Yarb 7amota yb3t"),
                         ),
                       )
                     ],
@@ -90,7 +93,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       bottom: 0,
                       child: Container(
                         width: 100,
-                        height: 2, // Height of the underline
+                        height: 2,
                         color: Colors.black,
                       ),
                     ),
