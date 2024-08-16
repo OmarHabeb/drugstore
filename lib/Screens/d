@@ -1,0 +1,73 @@
+ Container(
+              decoration: BoxDecoration(color: Colors.blue, boxShadow: [
+                BoxShadow(
+                    blurRadius: 3, color: Colors.black87, offset: Offset(3, 3))
+              ]),
+              child: TextField(
+                controller: Frist,
+                decoration: InputDecoration(
+                  border: UnderlineInputBorder(borderSide: BorderSide.none),
+                  hintText: "Enter Your E-Mail",
+                  prefixIcon: Icon(Icons.person),
+                ),
+              ),
+            ),
+           
+            Container(
+              decoration: BoxDecoration(color: Colors.blue, boxShadow: [
+                BoxShadow(
+                    blurRadius: 3, color: Colors.black87, offset: Offset(3, 3))
+              ]),
+              child: TextField(
+                controller: Second,
+                decoration: InputDecoration(
+                  border: UnderlineInputBorder(borderSide: BorderSide.none),
+                  hintText: "Enter Your Password",
+                  prefixIcon: Icon(Icons.key),
+                ),
+              ),
+            ),
+
+
+
+
+
+                     Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                InkWell(
+                    
+                    child: Container(
+                      width: 100,
+                      height: 80,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.blue,
+                          boxShadow: [
+                            BoxShadow(
+                                blurRadius: 3,
+                                color: Colors.black87,
+                                offset: Offset(3, 3))
+                          ]),
+                      child: Text("LogIN"),
+                    )),
+                InkWell(
+                    
+                    child: Container(
+                      width: 100,
+                      height: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.blue,
+                          boxShadow: [
+                            BoxShadow(
+                                blurRadius: 3,
+                                color: Colors.black87,
+                                offset: Offset(3, 3))
+                          ]),
+                      child: Center(child: Text("LogIN")),
+                    )),
+                    
+              ],
+            )

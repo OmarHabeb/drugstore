@@ -3,13 +3,13 @@ import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+class SplashScreenPage extends StatefulWidget {
+  const SplashScreenPage({super.key});
 
   @override
-  State<SplashScreen> createState() => _SlpashScreenState();
+  State<SplashScreenPage> createState() => _SlpashScreenState();
 }
-class _SlpashScreenState extends State<SplashScreen> {
+class _SlpashScreenState extends State<SplashScreenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
