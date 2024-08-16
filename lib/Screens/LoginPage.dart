@@ -1,3 +1,4 @@
+import 'package:drugstore/Screens/CategoriesPage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -17,8 +18,9 @@ class _LoginPAgeState extends State<LoginPage> {
     return Scaffold(
       body: Container(
         width: MediaQuery.of(context).size.width,
-    
-        decoration: BoxDecoration(image: DecorationImage(image: AssetImage("Images/d.jpg") , fit: BoxFit.cover)),
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("Images/d.jpg"), fit: BoxFit.cover)),
         child: Center(
           child: Container(
             width: 300,
@@ -118,23 +120,39 @@ class _LoginPAgeState extends State<LoginPage> {
                           )
                         ],
                       ),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       InkWell(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CategoriesPage()));
+                        },
                         child: Container(
                           width: 120,
                           height: 50,
                           decoration: BoxDecoration(
-                            color: Color(0xFF00B3B6),
-                           borderRadius: BorderRadius.circular(30)
-                          ),
-                          child: Center(child: Text("LogIn" , style: TextStyle(color: Colors.black , fontSize: 20),)),
+                              color: Color(0xFF00B3B6),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Center(
+                              child: Text(
+                            "LogIn",
+                            style: TextStyle(color: Colors.black, fontSize: 20),
+                          )),
                         ),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("Don't have an account"),
-                          TextButton(onPressed: (){}, child: Text("SinUp" , style: TextStyle(color: Colors.white),))
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                "SinUp",
+                                style: TextStyle(color: Colors.white),
+                              ))
                         ],
                       )
                     ],

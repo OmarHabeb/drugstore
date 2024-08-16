@@ -1,3 +1,4 @@
+import 'package:drugstore/Screens/DoctorsPage.dart';
 import 'package:drugstore/Widgets/DrawerWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -44,6 +45,9 @@ class DoctorsStartingpage extends StatelessWidget {
                     height: 60,
                   ),
                   InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/doctors');
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),

@@ -135,7 +135,9 @@ class _CategoriesPageState extends State<CategoriesPage> {
                         ),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, '/docstart');
+                        },
                         child: Container(
                           width: 130,
                           height: 130,

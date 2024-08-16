@@ -1,4 +1,4 @@
-import 'package:drugstore/Screens/CategoriesPage.dart';
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -21,7 +21,7 @@ class _SlpashScreenState extends State<SplashScreenPage> {
             "Images/Doctor_Splash.json",
             repeat: false,
             onLoaded: (p0) => Future.delayed(p0.duration, () {
-              Navigator.pushReplacementNamed(context, '/docstart');
+              Navigator.pushReplacementNamed(context, '/');
             }),
           ),
           Text(

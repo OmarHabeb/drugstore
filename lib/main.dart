@@ -1,4 +1,5 @@
 import 'package:drugstore/Screens/CategoriesPage.dart';
+import 'package:drugstore/Screens/DoctorsPage.dart';
 import 'package:drugstore/Screens/Doctors_StartingPage.dart';
 import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:drugstore/Screens/SplashScreenPage.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/splash': (context) => SplashScreenPage(),
         '/categories': (context) => CategoriesPage(),
         '/docstart': (context) => DoctorsStartingpage(),
+        '/doctors': (context) => DoctorPage(),
       },
     );
   }
