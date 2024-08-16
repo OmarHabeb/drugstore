@@ -1,3 +1,4 @@
+import 'package:drugstore/Screens/CategoriesPage.dart';
 import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -21,7 +22,7 @@ class _SlpashScreenState extends State<SplashScreen> {
               repeat: false,
               onLoaded: (p0) => Future.delayed(p0.duration, () {
                 Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => LoginPage()));
+                    context, MaterialPageRoute(builder: (context) => CategoriesPage()));
               }),
             ),
             Text("Welcome In Your Drugstore" , style: TextStyle(color: Colors.white , fontSize: 20 ,fontWeight: FontWeight.bold),)
