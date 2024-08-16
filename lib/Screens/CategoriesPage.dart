@@ -12,6 +12,7 @@ class CategoriesPage extends StatefulWidget {
 class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
+    bool _isHovering = false;
     return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
@@ -120,7 +121,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           ),
                           child: Column(
                             children: [
-                              SizedBox(height: 90), // IMAGE HNA LMA 7AMOTA YB3T
+                              Container(
+                                  height: 87,
+                                  width: double.infinity,
+                                  child: Image.asset(
+                                    "Images/pills.png",
+                                    fit: BoxFit.cover,
+                                  )),
                               Text(
                                 "Medical",
                                 style: TextStyle(
@@ -148,7 +155,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           ),
                           child: Column(
                             children: [
-                              SizedBox(height: 90), // IMAGE HNA LMA 7AMOTA YB3T
+                              Container(
+                                  height: 87,
+                                  width: double.infinity,
+                                  child: Image.asset(
+                                    "Images/doc.png",
+                                    fit: BoxFit.cover,
+                                  )),
                               Text(
                                 "Doctors",
                                 style: TextStyle(
@@ -179,7 +192,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       ),
                       child: Column(
                         children: [
-                          SizedBox(height: 90), // IMAGE HNA LMA 7AMOTA YB3T
+                          Container(
+                              height: 87,
+                              width: double.infinity,
+                              child: Image.asset(
+                                "Images/beauty.png",
+                                fit: BoxFit.cover,
+                              )),
                           Text(
                             "Beauty",
                             style: TextStyle(color: Colors.white, fontSize: 20),
