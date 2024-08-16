@@ -1,4 +1,4 @@
-import 'package:drugstore/LoginPage.dart';
+import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

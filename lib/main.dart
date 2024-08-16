@@ -1,4 +1,4 @@
-import 'package:drugstore/SplashScreen.dart';
+import 'package:drugstore/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
