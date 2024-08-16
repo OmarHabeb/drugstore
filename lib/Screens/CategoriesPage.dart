@@ -12,7 +12,6 @@ class CategoriesPage extends StatefulWidget {
 class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
-    bool _isHovering = false;
     return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
@@ -20,7 +19,6 @@ class _CategoriesPageState extends State<CategoriesPage> {
           backgroundColor: Colors.transparent,
           elevation: 0,
         ),
-        drawerScrimColor: Colors.red,
         drawer: Drawer(),
         body: Column(
           children: [
