@@ -24,7 +24,7 @@ class _SlpashScreenState extends State<SplashScreenPage> {
               Navigator.pushReplacementNamed(context, '/');
             }),
           ),
-          Text(
+          const Text(
             "Welcome In Your Drugstore",
             style: TextStyle(
                 color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),

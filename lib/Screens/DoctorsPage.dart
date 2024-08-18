@@ -13,28 +13,28 @@ class _DoctorPageState extends State<DoctorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.blue, size: 40),
-        actions: [
+        iconTheme: const IconThemeData(color: Colors.blue, size: 40),
+        actions: const [
           Icon(
             Icons.home,
             color: Colors.black,
           )
         ],
       ),
-      drawer: CustomDrawer(),
+      drawer: const CustomDrawer(),
       body: Column(
         children: [
           Expanded(
               child: Container(
-            padding: EdgeInsets.only(right: 20, left: 20),
+            padding: const EdgeInsets.only(right: 20, left: 20),
             color: Colors.white,
             child: Column(
               children: [
-                Container(
+                SizedBox(
                   height: 50,
                   child: TextField(
                     decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.search),
+                        prefixIcon: const Icon(Icons.search),
                         fillColor: Colors.grey[300],
                         filled: true,
                         border: OutlineInputBorder(
@@ -42,10 +42,10 @@ class _DoctorPageState extends State<DoctorPage> {
                             borderSide: BorderSide.none)),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "Catetories",

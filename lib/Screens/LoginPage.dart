@@ -19,7 +19,7 @@ class _LoginPAgeState extends State<LoginPage> {
     return Scaffold(
       body:  Stack(
         children: [
-          Container(
+          SizedBox(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             child: Lottie.asset("Images/login.json" , repeat: true),
@@ -37,13 +37,13 @@ class _LoginPAgeState extends State<LoginPage> {
                     Container(
                       width: double.infinity,
                       height: 50,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFF00B3B6),
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(30),
                             topRight: Radius.circular(30)),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           "LogIn Page",
                           style: TextStyle(color: Colors.black, fontSize: 25),
@@ -51,18 +51,18 @@ class _LoginPAgeState extends State<LoginPage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(15),
+                      padding: const EdgeInsets.all(15),
                       child: Column(
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width,
                             height: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 border: Border(
                                     bottom: BorderSide(color: Colors.black))),
                             child: TextField(
                               controller: Second,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 border: UnderlineInputBorder(
                                     borderSide: BorderSide.none),
                                 hintText: "Enter Your E-Mail",
@@ -73,18 +73,18 @@ class _LoginPAgeState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width,
                             height: 50,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 border: Border(
                                     bottom: BorderSide(color: Colors.black))),
                             child: TextField(
                               controller: Frist,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 border: UnderlineInputBorder(
                                     borderSide: BorderSide.none),
                                 hintText: "Enter Your Password",
@@ -95,7 +95,7 @@ class _LoginPAgeState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Row(
@@ -103,7 +103,7 @@ class _LoginPAgeState extends State<LoginPage> {
                             children: [
                               Row(
                                 children: [
-                                  Container(
+                                  SizedBox(
                                     width: 20,
                                     height: 10,
                                     child: Checkbox(
@@ -115,15 +115,15 @@ class _LoginPAgeState extends State<LoginPage> {
                                       },
                                     ),
                                   ),
-                                  Text("Remember me" ,style: TextStyle(fontWeight: FontWeight.bold),),
+                                  const Text("Remember me" ,style: TextStyle(fontWeight: FontWeight.bold),),
                                 ],
                               ),
-                              InkWell(
+                              const InkWell(
                                 child: Text("Forget Password?",style: TextStyle(fontWeight: FontWeight.bold)),
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           InkWell(
@@ -131,15 +131,15 @@ class _LoginPAgeState extends State<LoginPage> {
                               Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => CategoriesPage()));
+                                      builder: (context) => const CategoriesPage()));
                             },
                             child: Container(
                               width: 120,
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: Color(0xFF00B3B6),
+                                  color: const Color(0xFF00B3B6),
                                   borderRadius: BorderRadius.circular(30)),
-                              child: Center(
+                              child: const Center(
                                   child: Text(
                                 "LogIn",
                                 style: TextStyle(color: Colors.black, fontSize: 20),
@@ -149,10 +149,10 @@ class _LoginPAgeState extends State<LoginPage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text("Don't have an account"),
+                              const Text("Don't have an account"),
                               TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "Sin Up",
                                     style: TextStyle(color: Colors.blue),
                                   ))
