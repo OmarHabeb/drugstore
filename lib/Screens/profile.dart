@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
-class CustomDrawer extends StatelessWidget {
-  const CustomDrawer({super.key});
+class profile extends StatefulWidget {
+  const profile({super.key});
 
   @override
+  State<profile> createState() => _profileState();
+}
+
+class _profileState extends State<profile> {
+  @override
   Widget build(BuildContext context) {
-    return Drawer(
-      child: Column(
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(title: Text("Profile" ),centerTitle: true,
+  backgroundColor: Colors.transparent,    
+      
+      ),
+      body: Column(
         children: [
           const UserAccountsDrawerHeader(
             accountName: Text('Amelia Khaled'),
@@ -30,13 +40,6 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.person),
-            title: const Text('Profile'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
             leading: const Icon(Icons.settings),
             title: const Text('Settings'),
             onTap: () {
@@ -53,6 +56,8 @@ class CustomDrawer extends StatelessWidget {
           ),
         ],
       ),
+
+
     );
   }
 }

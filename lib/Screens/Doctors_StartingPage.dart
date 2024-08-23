@@ -1,16 +1,13 @@
-import 'package:drugstore/Widgets/DrawerWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class DoctorsStartingpage extends StatelessWidget {
-  const DoctorsStartingpage({super.key});
-
+const DoctorsStartingpage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        iconTheme: IconThemeData(color: const Color(0XFF00B3B6), size: 30.sp),
+        iconTheme: IconThemeData(color: Color.fromARGB(255, 76, 76, 220), size: 30.sp),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -25,7 +22,6 @@ class DoctorsStartingpage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: const CustomDrawer(),
       body: SafeArea(
         child: Column(
           children: [
@@ -38,7 +34,7 @@ class DoctorsStartingpage extends StatelessWidget {
                   Text(
                     "Doctor's Helpline",
                     style: TextStyle(
-                      color: const Color(0XFF00B3B6),
+                      color:  Color.fromARGB(255, 76, 76, 220),
                       fontSize: 25.sp,
                     ),
                   ),

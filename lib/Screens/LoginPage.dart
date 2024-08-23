@@ -1,4 +1,5 @@
 import 'package:drugstore/Screens/CategoriesPage.dart';
+import 'package:drugstore/Widgets/botton_navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -38,7 +39,7 @@ class _LoginPAgeState extends State<LoginPage> {
                       width: double.infinity,
                       height: 50,
                       decoration: const BoxDecoration(
-                        color: Color(0xFF00B3B6),
+                        color:  Color.fromARGB(255, 76, 76, 220),
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(30),
                             topRight: Radius.circular(30)),
@@ -131,13 +132,13 @@ class _LoginPAgeState extends State<LoginPage> {
                               Navigator.pushReplacement(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const CategoriesPage()));
+                                      builder: (context) => const botton_navigator()));
                             },
                             child: Container(
                               width: 120,
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: const Color(0xFF00B3B6),
+                                  color:   Color.fromARGB(255, 76, 76, 220),
                                   borderRadius: BorderRadius.circular(30)),
                               child: const Center(
                                   child: Text(

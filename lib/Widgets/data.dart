@@ -1,0 +1,16 @@
+List<String>types_of_Diseases=[
+"All",
+"Fever", 
+"Cough",
+"Headache",
+"Fatigue",
+"Sore Throat",
+"Runny Nose",
+"Headache",
+"Fatigue",
+"Sore Throat",
+"Runny Nose",
+"Body Aches",
+"Chills",
+"Dizziness",
+];

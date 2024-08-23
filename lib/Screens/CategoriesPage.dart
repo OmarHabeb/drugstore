@@ -1,14 +1,10 @@
-import 'package:drugstore/Widgets/DrawerWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({super.key});
-
   @override
   State<CategoriesPage> createState() => _CategoriesPageState();
 }
-
 class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
@@ -19,14 +15,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      drawer: const CustomDrawer(),
       body: Column(
         children: [
           Expanded(
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
               width: double.infinity,
-              color: Colors.blue,
+              color:  Color.fromARGB(255, 76, 76, 220),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -62,7 +57,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     width: 330.w,
                     height: 100.h,
                     decoration: BoxDecoration(
-                      color: const Color(0XFF00B0AF),
+                      color: Color.fromARGB(255, 76, 76, 220),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black26,
@@ -116,7 +111,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color: const Color(0xFF4C73D3),
+                            color:  Color.fromARGB(255, 76, 76, 220),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
@@ -153,7 +148,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color: const Color(0xFF00B3B6),
+                            color:  Color.fromARGB(255, 76, 76, 220),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
