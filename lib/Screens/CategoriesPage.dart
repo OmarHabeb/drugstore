@@ -1,3 +1,4 @@
+import 'package:drugstore/Screens/Products/Home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -106,7 +107,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Home_page_products()));
+                        },
                         child: Container(
                           width: 130.w,
                           height: 130.h,

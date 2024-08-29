@@ -1,6 +1,6 @@
 import 'package:drugstore/Screens/CategoriesPage.dart';
-import 'package:drugstore/Screens/DoctorsPage.dart';
-import 'package:drugstore/Screens/Doctors_StartingPage.dart';
+import 'package:drugstore/Screens/Doctor/DoctorsPage.dart';
+import 'package:drugstore/Screens/Doctor/Doctors_StartingPage.dart';
 import 'package:drugstore/Screens/LoginPage.dart';
 import 'package:drugstore/Screens/SplashScreenPage.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Drugstore',
         debugShowCheckedModeBanner: false,
-        initialRoute: '/categories',
+        initialRoute: '/splash',
         routes: {
           '/': (context) => const LoginPage(),
           '/splash': (context) => const SplashScreenPage(),
