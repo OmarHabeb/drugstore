@@ -1,31 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({super.key});
   @override
   State<CategoriesPage> createState() => _CategoriesPageState();
 }
+
 class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white, size: 30.sp),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: Container(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
               width: double.infinity,
-              color:  Color.fromARGB(255, 76, 76, 220),
+              color: Color.fromARGB(255, 76, 76, 220),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 75.h),
+                  SizedBox(height: 65.h),
                   Text(
                     'Hello, \nAmelia',
                     style: TextStyle(fontSize: 25.sp, color: Colors.white),
@@ -41,6 +37,12 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.r),
                         borderSide: BorderSide.none,
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30.0.r),
+                        borderSide: BorderSide(
+                          color: Color(0XFFEDEDFC),
+                        ),
                       ),
                       contentPadding: EdgeInsets.symmetric(vertical: 3.h),
                     ),
@@ -73,12 +75,11 @@ class _CategoriesPageState extends State<CategoriesPage> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 10),
                 ],
               ),
             ),
-          ),
-          Expanded(
-            child: Container(
+            Container(
               color: Colors.white,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -111,7 +112,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color:  Color.fromARGB(255, 76, 76, 220),
+                            color: Color.fromARGB(255, 76, 76, 220),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
@@ -148,7 +149,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color:  Color.fromARGB(255, 76, 76, 220),
+                            color: Color.fromARGB(255, 76, 76, 220),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
@@ -217,8 +218,8 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

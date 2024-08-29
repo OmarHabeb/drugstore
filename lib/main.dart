@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(360, 680),
+      designSize: Size(350, 850),
       child: MaterialApp(
         title: 'Drugstore',
         debugShowCheckedModeBanner: false,
-        initialRoute: '/splash',
+        initialRoute: '/categories',
         routes: {
           '/': (context) => const LoginPage(),
           '/splash': (context) => const SplashScreenPage(),

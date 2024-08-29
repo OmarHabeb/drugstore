@@ -20,6 +20,7 @@ class _botton_navigatorState extends State<botton_navigator> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+      
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         currentIndex: index,

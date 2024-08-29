@@ -11,8 +11,9 @@ class _profileState extends State<profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+             
       extendBodyBehindAppBar: true,
-      appBar: AppBar(title: Text("Profile" ),centerTitle: true,
+      appBar: AppBar(title: Text("Profile", style: TextStyle(color: Colors.white),),centerTitle: true, foregroundColor: Colors.white,
   backgroundColor: Colors.transparent,    
       
       ),
@@ -29,19 +30,23 @@ class _profileState extends State<profile> {
               ),
             ),
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Color.fromARGB(255, 76, 76, 220),
             ),
           ),
           ListTile(
-            leading: const Icon(Icons.home),
+            leading: const Icon(Icons.home, color: Color(0XFF101010),),
             title: const Text('Home'),
+            trailing: Icon(Icons.arrow_right),
+
             onTap: () {
               Navigator.pop(context);
             },
           ),
           ListTile(
-            leading: const Icon(Icons.settings),
+            leading: const Icon(Icons.settings, color: Color(0XFF101010)),
             title: const Text('Settings'),
+            trailing: Icon(Icons.arrow_right, ),
+
             onTap: () {
               Navigator.pop(context);
             },

@@ -1,5 +1,5 @@
 import 'package:drugstore/Screens/CategoriesPage.dart';
-import 'package:drugstore/Widgets/botton_navigator.dart';
+import 'package:drugstore/Widgets/buttonNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
