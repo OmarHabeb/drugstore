@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Drugstore',
         debugShowCheckedModeBanner: false,
-        initialRoute: '/splash',
+        initialRoute: '/categories',
         routes: {
           '/': (context) => const LoginPage(),
           '/splash': (context) => const SplashScreenPage(),

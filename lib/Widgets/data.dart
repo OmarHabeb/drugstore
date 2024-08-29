@@ -33,4 +33,30 @@ List<Map> doctor_details = [
     "rate":4.5,
     "category" : "category_type"
    },
+      {
+    "name": "Dr. name",
+    "img": "https://static.vecteezy.com/system/resources/previews/042/350/705/non_2x/ai-generated-3d-rendering-of-a-cartoon-of-business-woman-standing-with-crossed-arms-on-transparent-background-ai-generated-png.png",
+    "rate":4.5,
+    "category" : "category_type"
+   },
+      {
+    "name": "Dr. name",
+    "img": "https://static.vecteezy.com/system/resources/previews/042/350/705/non_2x/ai-generated-3d-rendering-of-a-cartoon-of-business-woman-standing-with-crossed-arms-on-transparent-background-ai-generated-png.png",
+    "rate":4.5,
+    "category" : "category_type"
+   },
+      {
+    "name": "Dr. name",
+    "img": "https://static.vecteezy.com/system/resources/previews/042/350/705/non_2x/ai-generated-3d-rendering-of-a-cartoon-of-business-woman-standing-with-crossed-arms-on-transparent-background-ai-generated-png.png",
+    "rate":4.5,
+    "category" : "category_type"
+   },
+     {
+    "name": "Dr. name",
+    "img": "https://static.vecteezy.com/system/resources/previews/042/350/705/non_2x/ai-generated-3d-rendering-of-a-cartoon-of-business-woman-standing-with-crossed-arms-on-transparent-background-ai-generated-png.png",
+    "rate":4.5,
+    "category" : "category_type"
+   },
+  
 ];
+

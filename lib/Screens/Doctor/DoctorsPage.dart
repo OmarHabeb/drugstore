@@ -124,6 +124,7 @@ class _DoctorPageState extends State<DoctorPage> {
                     
                     height: 40.h,
                     child: ListView.separated(
+                            shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemCount: types_of_Diseases.length,
                       separatorBuilder: (context, index) {
