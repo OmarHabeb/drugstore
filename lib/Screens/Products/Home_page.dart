@@ -1,5 +1,3 @@
-import 'package:drugstore/Screens/Doctor/Doctor_details_page.dart';
-import 'package:drugstore/Widgets/buttonNavigationBar.dart';
 import 'package:drugstore/Widgets/data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -147,7 +145,9 @@ class _Home_page_productsState extends State<Home_page_products> {
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 200,
+                decoration: BoxDecoration(
                 color: Colors.white,
+                ),
               ),
               SizedBox(height: 10),
               Row(
@@ -173,9 +173,7 @@ class _Home_page_productsState extends State<Home_page_products> {
                       ))
                 ],
               ),
-              SizedBox(
-                height: 10.h,
-              ),
+             
               GridView.builder(
                 
                   physics: NeverScrollableScrollPhysics(),

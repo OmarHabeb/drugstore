@@ -30,17 +30,26 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   SizedBox(height: 10.h),
                   TextField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.search, size: 24.sp),
-                      hintText: "What are you looking for?",
-                      hintStyle: TextStyle(fontSize: 16.sp),
+                      prefixIcon: Icon(
+                        Icons.search,
+                        size: 24.sp,
+                        color: Color(0XFFEDEDFC).withOpacity(0.4),
+                      ),
+                      hintText: "Looking for a certain Doc?",
+                      hintStyle: TextStyle(
+                        fontSize: 16.sp,
+                        color: Color(0XFFEDEDFC).withOpacity(0.4),
+                      ),
                       filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20.r),
-                        borderSide: BorderSide.none,
+                      fillColor: Color.fromARGB(255, 76, 76, 220),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Color(0XFFEDEDFC).withOpacity(0.4),
+                        ),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30.0.r),
+                        borderRadius: BorderRadius.circular(15),
                         borderSide: BorderSide(
                           color: Color(0XFFEDEDFC),
                         ),
@@ -60,7 +69,6 @@ class _CategoriesPageState extends State<CategoriesPage> {
                     width: 330.w,
                     height: 100.h,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 76, 76, 220),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black26,
@@ -68,13 +76,10 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           offset: Offset(0, 2.h),
                         ),
                       ],
+                      image: DecorationImage(image: AssetImage("Images/drownz.jpg"), fit:  BoxFit.fill),
+
                     ),
-                    child: Center(
-                      child: Text(
-                        "Yarb 7amota yb3t",
-                        style: TextStyle(fontSize: 18.sp),
-                      ),
-                    ),
+                  
                   ),
                   SizedBox(height: 10),
                 ],

@@ -1,9 +1,7 @@
 
 import 'package:drugstore/Screens/Doctor/Doctor_details_page.dart';
 import 'package:drugstore/Widgets/data.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DoctorPage extends StatefulWidget {
@@ -21,6 +19,8 @@ class _DoctorPageState extends State<DoctorPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+           
+          
             Container(
               width: double.infinity,
               height: 170,

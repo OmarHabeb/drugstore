@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class profile extends StatefulWidget {
   const profile({super.key});
@@ -8,18 +9,29 @@ class profile extends StatefulWidget {
 }
 
 class _profileState extends State<profile> {
+    bool theme = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-             
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(title: Text("Profile", style: TextStyle(color: Colors.white),),centerTitle: true, foregroundColor: Colors.white,
-  backgroundColor: Colors.transparent,    
       
+      backgroundColor:  Color(0XFFEDEDFC),
+      
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Text(
+          "Profile",
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
       ),
       body: Column(
+        
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const UserAccountsDrawerHeader(
+           UserAccountsDrawerHeader(
             accountName: Text('Amelia Khaled'),
             accountEmail: Text('Amelia@Gmail.com'),
             currentAccountPicture: CircleAvatar(
@@ -30,26 +42,92 @@ class _profileState extends State<profile> {
               ),
             ),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 76, 76, 220),
+             
+              gradient: LinearGradient(
+                colors: [ Color.fromARGB(255, 76, 76, 220),Colors.blue],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
+                     ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Text("ACCOUNT", style: GoogleFonts.acme(
+            textStyle: TextStyle(fontSize: 12, color: Colors.grey),
+                    ),),
+          ),
+          SizedBox(height: 20),
+          Container(
+             decoration: BoxDecoration( 
+              color: Colors.white.withOpacity(0.5),
+      
+             ),
+            child: ListTile(
+              leading: const Icon(
+                Icons.person,
+                color: Colors.blue,
+              ),
+              title:  Text('Edit profile'),
+              trailing: Icon(Icons.arrow_right),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            
+          ),
+           SizedBox(height: 10),
+          Container(
+            decoration: BoxDecoration( 
+              color: Colors.white.withOpacity(0.5),
+            ),
+            child: ListTile(
+        
+              leading: const Icon(Icons.lock_outline, color: Colors.pink),
+              title: const Text('Privacy'),
+              trailing: Icon(
+                Icons.arrow_right,
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
           ),
-          ListTile(
-            leading: const Icon(Icons.home, color: Color(0XFF101010),),
-            title: const Text('Home'),
-            trailing: Icon(Icons.arrow_right),
+           SizedBox(height: 10),
+           Container(
+            decoration: BoxDecoration( 
+              color: Colors.white.withOpacity(0.5),
+            ),
+            child: ListTile(
+        
+              leading:  Icon(theme == false ?  Icons.dark_mode : Icons.light_mode, color: theme == false ? Colors.black : Colors.white),
+              title:  Text('Theme'),
+              trailing: Switch(value: theme, onChanged: (value) {
 
-            onTap: () {
-              Navigator.pop(context);
-            },
+                setState(() {
+                theme = !theme;
+                  
+                });
+              },),
+           
+            ),
           ),
-          ListTile(
-            leading: const Icon(Icons.settings, color: Color(0XFF101010)),
-            title: const Text('Settings'),
-            trailing: Icon(Icons.arrow_right, ),
-
-            onTap: () {
-              Navigator.pop(context);
-            },
+          SizedBox(height: 10),
+          Container(
+            decoration: BoxDecoration( 
+              color: Colors.white.withOpacity(0.5),
+            ),
+            
+            child: ListTile(
+        
+              leading: const Icon(Icons.settings, color: Color(0XFF101010)),
+              title: const Text('Settings'),
+              trailing: Icon(
+                Icons.arrow_right,
+              ),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ),
           const Spacer(),
           ListTile(
@@ -61,8 +139,6 @@ class _profileState extends State<profile> {
           ),
         ],
       ),
-
-
     );
   }
 }
