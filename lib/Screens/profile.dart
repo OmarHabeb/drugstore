@@ -58,6 +58,7 @@ class _profileState extends State<profile> {
           ),
           SizedBox(height: 20),
           Container(
+            margin: EdgeInsets.only(right: 10 ,left: 10),
              decoration: BoxDecoration( 
               color: Colors.white.withOpacity(0.5),
       
@@ -77,6 +78,7 @@ class _profileState extends State<profile> {
           ),
            SizedBox(height: 10),
           Container(
+            margin: EdgeInsets.only(right: 10 ,left: 10),
             decoration: BoxDecoration( 
               color: Colors.white.withOpacity(0.5),
             ),
@@ -94,6 +96,7 @@ class _profileState extends State<profile> {
           ),
            SizedBox(height: 10),
            Container(
+            margin: EdgeInsets.only(right: 10 ,left: 10),
             decoration: BoxDecoration( 
               color: Colors.white.withOpacity(0.5),
             ),
@@ -113,6 +116,7 @@ class _profileState extends State<profile> {
           ),
           SizedBox(height: 10),
           Container(
+            margin: EdgeInsets.only(right: 10 ,left: 10),
             decoration: BoxDecoration( 
               color: Colors.white.withOpacity(0.5),
             ),
