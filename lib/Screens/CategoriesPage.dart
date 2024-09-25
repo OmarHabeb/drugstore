@@ -67,19 +67,20 @@ class _CategoriesPageState extends State<CategoriesPage> {
                   SizedBox(height: 10.h),
                   Container(
                     width: 330.w,
-                    height: 100.h,
+                    height: 110.h,
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black26,
                           blurRadius: 5.r,
-                          offset: Offset(0, 2.h),
+                          offset: Offset(3, 3.h),
                         ),
                       ],
-                      image: DecorationImage(image: AssetImage("Images/drownz.jpg"), fit:  BoxFit.fill),
+                      image: DecorationImage(image: AssetImage("Images/Asset 7.jpg"), fit:  BoxFit.cover),
 
                     ),
-                  
+
                   ),
                   SizedBox(height: 10),
                 ],
@@ -123,7 +124,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color: Color.fromARGB(255, 76, 76, 220),
+                            color: Colors.indigoAccent,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
@@ -152,6 +153,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                         ),
                       ),
                       InkWell(
+
                         onTap: () {
                           Navigator.pushNamed(context, '/docstart');
                         },
@@ -160,7 +162,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           height: 130.h,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.r),
-                            color: Color.fromARGB(255, 76, 76, 220),
+                            color: Colors.teal,
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.black26,
@@ -220,7 +222,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
                           Text(
                             "Beauty",
                             style:
-                                TextStyle(color: Colors.white, fontSize: 20.sp),
+                            TextStyle(color: Colors.white, fontSize: 20.sp),
                           ),
                         ],
                       ),

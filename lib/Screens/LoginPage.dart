@@ -1,5 +1,6 @@
 import 'package:drugstore/Widgets/buttonNavigationBar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatefulWidget {
@@ -17,6 +18,7 @@ class _LoginPAgeState extends State<LoginPage> {
     TextEditingController Second = TextEditingController();
 
     return Scaffold(
+      backgroundColor: Color(0xffe9f9ff),
       body: Stack(
         children: [
           SizedBox(
@@ -124,7 +126,7 @@ class _LoginPAgeState extends State<LoginPage> {
                             const InkWell(
                               child: Text("Forget Password?",
                                   style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
+                                  TextStyle(fontWeight: FontWeight.bold)),
                             )
                           ],
                         ),
@@ -137,7 +139,7 @@ class _LoginPAgeState extends State<LoginPage> {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        const botton_navigator()));
+                                    const botton_navigator()));
                           },
                           child: Container(
                             width: 120,
@@ -147,10 +149,10 @@ class _LoginPAgeState extends State<LoginPage> {
                                 borderRadius: BorderRadius.circular(30)),
                             child: const Center(
                                 child: Text(
-                              "LogIn",
-                              style:
+                                  "LogIn",
+                                  style:
                                   TextStyle(color: Colors.black, fontSize: 20),
-                            )),
+                                )),
                           ),
                         ),
                         Row(
